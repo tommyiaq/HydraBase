@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hydrabase</title>
-  <meta name="description" content="Hydrabase — the smart saucer that understands when your plants need water." />
+  <title>Hydrabase — Stop killing your plants.</title>
+  <meta name="description" content="Hydrabase is the smart saucer for people who forget to water plants. Weight-based, probe-free, and guilt-free." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Hydrabase — Stop killing your plants." />
+  <meta property="og:description" content="Hydrabase sits under your pot and watches it lose weight — so you don't have to remember when you last watered." />
+  <meta property="og:image"       content="media/demo.png" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Hydrabase — Stop killing your plants." />
+  <meta name="twitter:description" content="Weight-based, probe-free plant care for forgetful people." />
+  <meta name="twitter:image"       content="media/demo.png" />
+
   <style>
     :root {
       --bg: #07111a;
@@ -418,7 +431,7 @@
       }
 
       .grid-3 {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -438,6 +451,10 @@
       }
 
       .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3 {
         grid-template-columns: 1fr;
       }
 
@@ -473,10 +490,10 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">Smart plant care · weight-based watering</div>
-          <h1>The smart saucer for healthier plants.</h1>
+          <div class="eyebrow">For people who forget to water plants · weight-based</div>
+          <h1>Stop killing your plants.</h1>
           <p>
-            Hydrabase monitors your plant by measuring real weight loss over time, then helps trigger watering at the right moment — without unreliable soil probes.
+            Hydrabase sits under your pot and tracks its weight — so it knows when the plant is actually thirsty. No soil probes. No daily checking. No guilt.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#demo">Watch demo</a>
@@ -484,23 +501,23 @@
           </div>
           <div class="hero-stats">
             <div class="stat">
-              <strong>Probe-free</strong>
-              <span>No humidity sensor inside the soil.</span>
+              <strong>Set &amp; forget</strong>
+              <span>Place it once. Move on with your life.</span>
             </div>
             <div class="stat">
-              <strong>Adaptive</strong>
-              <span>Weight-based logic that follows real water use.</span>
+              <strong>No poking</strong>
+              <span>No soggy probes sticking out of the soil.</span>
             </div>
             <div class="stat">
-              <strong>Universal</strong>
-              <span>Designed as a smart base for everyday pots.</span>
+              <strong>Always watching</strong>
+              <span>Even when you're on vacation.</span>
             </div>
           </div>
         </div>
 
         <div class="hero-media">
           <div class="hero-card">
-            <img src="media/demo.png" alt="Hydrabase product render" />
+            <img src="media/demo.png" alt="Hydrabase product render" loading="lazy" />
           </div>
           <div class="floating top">
             <strong>Tracks water loss</strong>
@@ -517,26 +534,26 @@
     <section id="features">
       <div class="container">
         <div class="section-head">
-          <h2>Why Hydrabase feels different</h2>
+          <h2>Finally, plants that can complain</h2>
           <p>
-            Instead of guessing moisture with a low-cost soil sensor, Hydrabase reads the most reliable signal: how much water the plant system has actually lost.
+            You'd remember to water if your plant could text you. Hydrabase is the next best thing — it reads the most reliable signal there is: weight.
           </p>
         </div>
         <div class="grid-3">
           <article class="card">
             <div class="icon">💧</div>
-            <h3>Real physical signal</h3>
-            <p>Water has weight. As the plant dries out, Hydrabase can detect the change directly and react with more consistency.</p>
+            <h3>No lies from the soil</h3>
+            <p>Soil sensors can read "dry" even when the bottom half is soaking wet. Weight doesn't lie — if the water is gone, you'll know.</p>
           </article>
           <article class="card">
             <div class="icon">🪴</div>
-            <h3>Works under the pot</h3>
-            <p>No probes to insert, corrode, or reposition. Just place the pot on the base and let the system observe over time.</p>
+            <h3>Nothing to break (or lose)</h3>
+            <p>No probe to insert, corrode, accidentally snap off, or throw in the trash during a repot. Just a base. Under the pot. Done.</p>
           </article>
           <article class="card">
             <div class="icon">🤖</div>
-            <h3>Ready for automation</h3>
-            <p>Perfect as the intelligence layer for alerts, auto-watering routines, or future robotic watering systems.</p>
+            <h3>It can do the watering too</h3>
+            <p>Hook it up to an auto-watering system and go on vacation without asking your neighbour to "just check on the plants."</p>
           </article>
         </div>
       </div>
@@ -546,36 +563,36 @@
       <div class="container showcase">
         <div class="copy-panel">
           <div class="section-head">
-            <h2>How it works</h2>
-            <p>Simple on the outside, smart on the inside. Hydrabase turns weight data into useful care decisions.</p>
+            <h2>Dead simple to set up</h2>
+            <p>If you can put a pot on a table, you can use Hydrabase. Seriously, that's basically all of step one.</p>
           </div>
           <div class="steps">
             <div class="step">
               <div class="step-number">1</div>
               <div>
-                <strong>Place the plant on Hydrabase</strong>
-                <p>The saucer-shaped base becomes the measurement point for the entire pot and water system.</p>
+                <strong>Plop the plant on Hydrabase</strong>
+                <p>The saucer-shaped base becomes the measurement point for the entire pot and water system. Setup complete.</p>
               </div>
             </div>
             <div class="step">
               <div class="step-number">2</div>
               <div>
-                <strong>Learn the baseline</strong>
-                <p>After watering, the system can understand the high-water state and track the natural decline over time.</p>
+                <strong>Water it once (yes, just once)</strong>
+                <p>Hydrabase locks in the "happy" weight and starts tracking the natural decline from there.</p>
               </div>
             </div>
             <div class="step">
               <div class="step-number">3</div>
               <div>
-                <strong>Trigger the next action</strong>
-                <p>When the weight reaches a dynamic dry threshold, Hydrabase can notify the user or activate a watering workflow.</p>
+                <strong>Get notified when it's actually thirsty</strong>
+                <p>No more "should I water it? probably fine. maybe not." Just a clear signal — water now, or wait.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="media-panel" id="demo">
-          <video controls playsinline preload="metadata" poster="media/demo.png" aria-label="Hydrabase demo video">
+          <video id="demo-video" controls playsinline preload="auto" aria-label="Hydrabase demo video">
             <source src="media/demo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -587,8 +604,8 @@
       <div class="container">
         <div class="cta-box">
           <div>
-            <h2>Hydrabase starts from a simple idea.</h2>
-            <p>A smarter way to understand when plants need water — using weight, not guesswork.</p>
+            <h2>Your plants deserve better. So do you.</h2>
+            <p>Hydrabase was built by someone who killed a cactus. We get it — and we built the thing we wish we'd had.</p>
           </div>
           <a class="button button-primary" href="mailto:hello@hydrabase.com">Get in touch</a>
         </div>
@@ -598,12 +615,29 @@
 
   <footer>
     <div class="container">
-      © <span id="year"></span> Hydrabase. Built.
+      &copy; <span id="year"></span> Hydrabase. Built for forgetful plant parents.
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Extract first video frame and set as poster
+    const video = document.getElementById('demo-video');
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    video.addEventListener('loadeddata', () => {
+      video.currentTime = 0;
+    }, { once: true });
+
+    video.addEventListener('seeked', () => {
+      if (video.poster) return;
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      video.poster = canvas.toDataURL('image/jpeg', 0.85);
+    }, { once: true });
   </script>
 </body>
 </html>
